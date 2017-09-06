@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src='angular.min.js'></script>
+    <script src='client.js'></script>
+</head>
+
+<body ng-app='SportsCarApp' ng-controller='CarController as vm'>
+    <h1>Sports Cars, Woot!</h1>
+    <p ng-repeat = 'car in vm.carsArray'>
+        <li>Car Name: {{car.carName}}</li>
+        <li>Color: {{car.carColor}}</li>
+        <li>Engine: {{car.cylinders}}cyl</li>
+    </p>
+
+
+</body>
+
+</html>
